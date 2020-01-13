@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.smartbear.soapui</groupId>
+		<groupId>com.smartbear.soapui.se-fork</groupId>
 		<artifactId>soapui-project</artifactId>
 		<version>5.6.0-SNAPSHOT</version>
 	</parent>
@@ -38,7 +38,7 @@
 					<includes>
 						<include>**/*.class</include>
 					</includes>
-					<groups>com.smartbear.soapui.utils.IntegrationTest</groups>
+					<groups>com.smartbear.soapui.se-fork.utils.IntegrationTest</groups>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -59,12 +59,12 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.smartbear.soapui</groupId>
+			<groupId>com.smartbear.soapui.se-fork</groupId>
 			<artifactId>soapui</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.smartbear.soapui</groupId>
+			<groupId>com.smartbear.soapui.se-fork</groupId>
 			<artifactId>soapui</artifactId>
 			<version>${project.version}</version>
 			<type>test-jar</type>
