@@ -87,7 +87,6 @@ public class ProxyUtilsTestCase {
     }
 
     @Test
-    @Ignore
     public void givenProxyEnabledAndProxyPropertiesSetThenSetAutoProxy() {
         ProxyUtils.setProxyEnabled(true);
         ProxyUtils.setAutoProxy(true);
@@ -99,7 +98,6 @@ public class ProxyUtilsTestCase {
     }
 
     @Test
-    @Ignore
     public void givenAutomaticProxyDetectionAndProxyPropertiesSetThenSetAutoProxy() {
         ProxyUtils.setProxyEnabled(true);
         ProxyUtils.setAutoProxy(true);
@@ -114,8 +112,7 @@ public class ProxyUtilsTestCase {
     public void givenProxyDisabledThenUseNoProxy() {
         ProxyUtils.setProxyEnabled(false);
         ProxyUtils.setAutoProxy(false);
-//        setProxySystemProperties();
-        clearProxySystemProperties();
+        setProxySystemProperties();
 
         ProxyUtils.setGlobalProxy(emptySettings());
         assertGlobalProxyHost(null);

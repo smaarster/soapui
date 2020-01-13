@@ -180,7 +180,7 @@ public class ProxyUtils {
     }
 
     public static void setGlobalProxy(Settings settings) {
-        ProxySelector proxySelector = ProxySelector.getDefault();
+        ProxySelector proxySelector = null;
         ProxySettingsAuthenticator authenticator = null;
         if (proxyEnabled) {
             if (autoProxy) {
