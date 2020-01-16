@@ -91,7 +91,7 @@ public class PluginLoaderTest {
         PluginInfo pluginInfo = pluginLoader.loadPluginInfoFrom(pluginFile, java.util.Collections.<JarClassLoader>emptySet());
 
         assertThat(pluginInfo.getId().getName(), is("Example plugin"));
-        assertThat(pluginInfo.getId().getGroupId(), is("com.smartbear.soapui.se-fork"));
+        assertThat(pluginInfo.getId().getGroupId(), is("com.smartbear.soapui"));
         assertThat(pluginInfo.getVersion(), is(Version.fromString("0.1")));
     }
 
