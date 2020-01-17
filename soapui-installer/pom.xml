@@ -7,7 +7,7 @@
   <parent>
     <artifactId>soapui-project</artifactId>
         <groupId>com.smartbear.soapui.se-fork</groupId>
-    <version>5.6.0</version>
+    <version>5.6.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>soapui-installer</artifactId>
